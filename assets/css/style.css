@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: radial-gradient(600px at 1147px 256px, #1d4ed826, transparent 80%)
+  background: radial-gradient(600px at 1147px 256px, #2550c826, transparent 80%)
     no-repeat fixed;
   color: white;
   max-height: 100vh;
@@ -26,6 +26,10 @@ body {
 a {
   color: var(--white-1);
   text-decoration: none;
+}
+
+b {
+  color: var(--white-1);
 }
 
 p {
@@ -117,13 +121,14 @@ header nav ul li a {
 
 header nav ul li a .nav-title {
   font-weight: bold;
+  border-radius: 2px;
   padding: 4px 20px;
   margin-left: 10px;
   transition-duration: 0.2s;
 }
 
 header nav ul li a .nav-indicator {
-  background-color: var(--white-1);
+  background-color: var(--white-2);
   display: block;
   width: 30px;
   height: 2px;
@@ -131,14 +136,15 @@ header nav ul li a .nav-indicator {
   transition-duration: 0.3s;
 }
 
-header nav ul li a:hover .nav-title {
+header nav ul li a:hover .nav-title, .nav-active {
   background-color: var(--white-1);
   color: var(--black-2);
-  margin: 0;
+  margin-left: 0px !important;
 }
 
-header nav ul li a:hover .nav-indicator {
-  width: 50px;
+header nav ul li a:hover .nav-indicator, .indicator-active {
+  width: 50px !important;
+  background-color: var(--white-1) !important;
 }
 
 header .contact span {
@@ -184,10 +190,18 @@ main section .tech-logo a img {
 }
 
 main section .tech-logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   filter: grayscale(100%);
   margin: 10px 0;
   margin-right: 30px;
   transition-duration: 1s;
+}
+
+main section .tech-logo a span {
+  visibility: hidden;
 }
 
 main section .tech-logo a > .invert {
@@ -197,6 +211,10 @@ main section .tech-logo a > .invert {
 
 main section .tech-logo a:hover {
   filter: grayscale(0%);
+}
+
+main section .tech-logo a:hover span {
+  visibility: visible;
 }
 
 main section .tech-logo a:hover > .invert {
@@ -248,6 +266,7 @@ main section .project-list .project .project-detail .project-header i {
 }
 
 main section .project-list .project .project-detail p {
+  font-size: 14px;
   margin: 0;
 }
 
@@ -439,14 +458,14 @@ main section .project-list .project .project-detail .project-link a i {
       no-repeat fixed;
   }
   .page {
-    padding: 0 40px;
+    padding: 0;
   }
   header {
     flex-direction: column;
     margin: calc(100vh / 2.5) 0;
   }
   main section {
-    padding: 100px 0;
+    padding: 100px 40px;
   }
   main section p {
     font-size: 16px;
@@ -455,8 +474,25 @@ main section .project-list .project .project-detail .project-link a i {
   main section > h3::after {
     width: 30%;
   }
-  main section .tech-logo a img {
-    width: 40px;
+  main section .project-list .project .project-img {
+    width: 100%;
+    height: calc(100vw / 2);
+    margin-bottom: 10px;
+  }
+  main section .project-list .project {
+    flex-direction: column;
+    margin: 0;
+  }
+  main section .project-list .project .project-detail .project-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  main section .project-list .project .project-detail .project-link a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 8px;
   }
 }
 
@@ -486,21 +522,8 @@ main section .project-list .project .project-detail .project-link a i {
   main section > p {
     font-size: 14px;
   }
-  main section .project-list .project {
-    flex-direction: column;
-    margin: 0;
-  }
-  main section .project-list .project .project-img {
-    width: 100%;
-    height: calc(100vw / 2);
-    margin-bottom: 10px;
-  }
   main section .project-list .project .project-detail {
     padding: 0;
-  }
-  main section .project-list .project .project-detail .project-header {
-    flex-direction: column;
-    gap: 2px;
   }
   main section .project-list .project .project-detail .project-header h4 {
     font-size: 24px;
@@ -510,12 +533,6 @@ main section .project-list .project .project-detail .project-link a i {
   }
   main section .project-list .project .project-detail p {
     font-size: 12px;
-  }
-  main section .project-list .project .project-detail .project-link a {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 8px;
   }
 }
 

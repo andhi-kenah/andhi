@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="./assets/css/solid.min.css">
     <link rel="stylesheet" href="./assets/css/brands.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
     <link rel="shortcut icon" href="./assets/img/avatar.png" type="image/x-icon">
     <title>Andhi Kenah</title>
 </head>
@@ -17,7 +17,7 @@
         <a href="#about" class="scroll-down">
             <span>SEE MORE &nbsp;<i class="fa fa-arrow-down fa-xs"></i></span>
         </a>
-        <header id="header" style="background-color: transparent;">
+        <header id="header">
             <div>
                 <div class="me">
                     <div class="avatar" title="Andhi Kenah">
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#projects">
+                            <a href="#projects" data-target="project-list">
                                 <span class="nav-indicator"></span>
                                 <span class="nav-title">Projects</span>
                             </a>
@@ -86,7 +86,9 @@
             <section id="about">
                 <h3>About</h3>
                 <p>
-                    I'm a <b>Full-Stack JavaScript Developer</b> specializing in <b>web</b> and <b>mobile
+                    I'm a <a href="https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer"
+                        title="Click for more detail"><b>Full-Stack JavaScript Developer</b></a> specializing in
+                    <b>web</b> and <b>mobile
                         applications</b>.
                     Since 2020, I have developed three personal projects that highlight my ability to design and
                     implement
@@ -94,15 +96,18 @@
                     and a deep understanding of the development lifecycle and each technology I used.
                 </p>
                 <p>
-                    Then, I developed <a href="#"><b>ILO app</b></a>, a mobile application for terminal students, who
+                    Then, I developed <a href="#ilo-app" data-target="ilo-app"><b>ILO app</b></a>, a mobile application
+                    for terminal students, who
                     are
                     preparing for the tertiary technical
                     baccalaureate exam to encourage them and help them learn even more.
                 </p>
                 <p>
-                    Even the difficulty of management in small and medium-sized businesses, <b>customer order
-                        management</b>
-                    has a more convenient mobile application, <a href="#"><b>Order Management</b></a>.
+                    Even the difficulty of management in small and medium-sized businesses, <a
+                        href="#order-management" data-target="order-management"><b>customer order
+                            management</b></a>
+                    has a more convenient mobile application, <a href="#order-management"
+                        data-target="order-management"><b>Order Management</b></a>.
                 </p>
                 <p>
                     As I launch my professional career, I am excited to bring my skills and
@@ -168,14 +173,18 @@
                 <p>
                     I've created management tools and platforms, such as interactive e-learning and project management:
                 </p>
-                <div class="project-list">
-                    <div class="project">
-                        <div class="project-img"></div>
+                <div class="project-list" id="project-list">
+                    <div class="project" id="ilo-app">
+                        <div class="project-img">
+                            <img src="./assets/img/screenshots/ilo-app.png" alt="Ilo app">
+                        </div>
                         <div class="project-detail">
                             <div class="project-header">
-                                <h4>
-                                    Ilo app
-                                </h4>
+                                <a href="https://m.facebook.com/p/ILO-App-100064749108676">
+                                    <h4>
+                                        Ilo app
+                                    </h4>
+                                </a>
                                 <i>2020 <span class="fa fa-minus"></span> 2024</i>
                             </div>
                             <p>
@@ -211,17 +220,21 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="project">
-                        <div class="project-img"></div>
+                    <div class="project" id="order-management">
+                        <div class="project-img">
+                            <img src="./assets/img/screenshots/order-management.png" alt="Order Management">
+                        </div>
                         <div class="project-detail">
                             <div class="project-header">
-                                <h4>
-                                    Order Management
-                                </h4>
+                                <a href="https://github.com/andhi-kenah">
+                                    <h4>
+                                        Order Management
+                                    </h4>
+                                </a>
                                 <i>2024</i>
                             </div>
                             <p>
-                                For managing client orders tailored for <b>SMEs</b> (Small and Medium Enterprises).
+                                For managing client orders tailored for <b>SMBs</b> (Small and Medium businesses).
                             </p>
                             <ul>
                                 <li title="TypeScript">
@@ -255,7 +268,7 @@
     <script src="./assets/js/fontawesome.min.js"></script>
     <script src="./assets/js/solid.min.js"></script>
     <script src="./assets/js/brands.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.min.js"></script>
 </body>
 
 </html>

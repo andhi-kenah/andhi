@@ -5,33 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="./assets/css/solid.min.css">
-    <link rel="stylesheet" href="./assets/css/brands.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
-    <link rel="shortcut icon" href="./assets/img/avatar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/avatar.jpeg" type="image/x-icon">
     <title>Andhi Kenah</title>
 </head>
 
-<body style="background-color: #252834;">
-    <div class="page">
+<body style="background-color: #232425;">
+    <div class="container">
         <a href="#about" class="scroll-down">
             <span>SEE MORE &nbsp;<i class="fa fa-arrow-down fa-xs"></i></span>
         </a>
-        <header id="header">
+        <aside id="aside">
             <div>
-                <div class="me">
-                    <div class="avatar" title="Andhi Kenah">
-                        <a href="/" title="Andhi Kenah">
-                            <img src="./assets/img/avatar.png" alt="Andhi Kenah">
-                        </a>
+                <header>
+                    <div class="information">
+                        <div class="avatar" title="Andhi Kenah">
+                            <a href="/">
+                                <img src="./assets/img/avatar.jpeg" alt="Andhi Kenah">
+                            </a>
+                        </div>
+                        <div id="theme" title="Theme">
+                            <i class="fa fa-info-o"></i>
+                        </div>
                     </div>
                     <div>
-                        <h1 title="Andhi Kenah">
-                            <a href="/">Andhi Kenah</a>
+                        <h1>
+                            <span href="/">Andhi Kenah</span>
                         </h1>
-                        <h2>Fullstack developer Javascript</h2>
+                        <h3>Fullstack developer / Admin finance</h3>
                     </div>
-                </div>
+                </header>
                 <nav>
                     <ul>
                         <li>
@@ -60,18 +63,19 @@
                 <hr>
                 <ul>
                     <li>
-                        <a href="https://github.com/andhi-kenah" title="Github">
-                            <span class="fa-brands fa-github"></span>
+                        <a href="https://github.com/andhi-kenah" target="_blank" title="Github">
+                            <span class="fa fa-github"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/andhi-kenah-andrianina-64937727a" title="Linkedin">
-                            <span class="fa-brands fa-linkedin"></span>
+                        <a href="https://www.linkedin.com/in/andhi-kenah-andrianina-64937727a" target="_blank"
+                            title="Linkedin">
+                            <span class="fa fa-linkedin"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/andhikenah" title="Facebook">
-                            <span class="fa-brands fa-facebook"></span>
+                        <a href="https://www.facebook.com/andhikenah" target="_blank" title="Facebook">
+                            <span class="fa fa-facebook"></span>
                         </a>
                     </li>
                     <li>
@@ -81,15 +85,18 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </aside>
         <main>
             <section id="about">
-                <h3>About</h3>
+                <h2>About</h2>
                 <p>
                     I'm a <a href="https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer"
-                        title="Click for more detail"><b>Full-Stack JavaScript Developer</b></a> specializing in
-                    <b>web</b> and <b>mobile
-                        applications</b>.
+                        title="Click for more detail"><b>Fullstack Developer</b></a> specializing in
+                    <b>web</b> and <b>mobile</b>
+                    applications, <br><b>Third year</b> in Computer Science at CNTEMAD University and <b>Fourth year</b>
+                    in Management and Finance at IMGAM.
+                </p>
+                <p>
                     Since 2020, I have developed three personal projects that highlight my ability to design and
                     implement
                     user-centered solutions. each reflecting my strategy of achieving small goals to achieve a big goal
@@ -101,10 +108,9 @@
                     are
                     preparing for the tertiary technical
                     baccalaureate exam to encourage them and help them learn even more.
-                </p>
-                <p>
-                    Even the difficulty of management in small and medium-sized businesses, <a
-                        href="#order-management" data-target="order-management"><b>customer order
+                    <br>
+                    Even the difficulty of management in small and medium-sized businesses, <a href="#order-management"
+                        data-target="order-management"><b>customer order
                             management</b></a>
                     has a more convenient mobile application, <a href="#order-management"
                         data-target="order-management"><b>Order Management</b></a>.
@@ -116,60 +122,137 @@
                 </p>
             </section>
             <section id="skills">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <p>
-                    I use these technologies and tools every day to consistently enhance my skills and knowledge.
+                    I use these technologies and tools almost every day to consistently enhance my skills and knowledge
+                    in software and application development.
                 </p>
                 <div class="tech-logo">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
-                        title="JavaScript">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/javascript.png" alt="JavaScript">
                         <span>JavaScript</span>
                     </a>
-                    <a href="https://www.typescriptlang.org" target="_blank" title="TypeScript">
+                    <a href="https://www.typescriptlang.org" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/typescript.png" alt="TypeScript">
                         <span>TypeScript</span>
                     </a>
-                    <a href="https://nodejs.org" target="_blank" title="Node.js">
+                    <a href="https://nodejs.org" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/node.js.png" alt="Node.js">
                         <span>Node.js</span>
                     </a>
-                    <a href="https://expressjs.com" target="_blank" title="ExpressJS">
+                    <a href="https://expressjs.com" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/expressjs.png" alt="ExpressJS" class="invert">
                         <span>ExpressJS</span>
                     </a>
-                    <a href="https://reactjs.org" target="_blank" title="ReactJS">
+                    <a href="https://reactjs.org" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img//tech/react.png" alt="ReactJS">
                         <span>ReactJS</span>
                     </a>
-                    <a href="https://www.mysql.com" target="_blank" title="MySQL">
+                    <a href="https://www.mysql.com" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/mysql.png" alt="MySQL" class="invert">
                         <span>MySQL</span>
                     </a>
-                    <a href="https://www.mongodb.com" target="_blank" title="MongoDB">
+                    <a href="https://www.mongodb.com" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/mongodb.png" alt="MongoDB">
                         <span>MongoDB</span>
                     </a>
-                    <a href="https://www.sqlite.org" target="_blank" title="SQLite">
+                    <a href="https://www.sqlite.org" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/sqlite.png" alt="SQLite" class="invert">
                         <span>SQLite</span>
                     </a>
-                    <a href="https://go.dev" target="_blank" title="Go">
+                    <a href="https://go.dev" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/go.png" alt="Go">
                         <span>Go</span>
                     </a>
-                    <a href="https://www.r-project.org" target="_blank" title="R">
+                    <a href="https://www.r-project.org" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/r.png" alt="R">
                         <span>R</span>
                     </a>
-                    <a href="https://github.com" target="_blank" title="GitHub">
+                    <a href="https://github.com" target="_blank">
+                        <div class="tech-detail">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
                         <img src="./assets/img/tech/github.png" alt="GitHub" class="invert">
                         <span>GitHub</span>
                     </a>
                 </div>
             </section>
             <section id="projects">
-                <h3>Projects</h3>
+                <h2>Projects</h2>
                 <p>
                     I've created management tools and platforms, such as interactive e-learning and project management:
                 </p>
@@ -263,11 +346,14 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <hr>
+                <p>Designed and performed by <a href="https://github.com/andhi-kenah" title="Andhi Kenah"><b>Andhi
+                        Kenah</b></a></p>
+                <span>&copy; Copyright 2024</span>
+            </footer>
         </main>
     </div>
-    <script src="./assets/js/fontawesome.min.js"></script>
-    <script src="./assets/js/solid.min.js"></script>
-    <script src="./assets/js/brands.min.js"></script>
     <script src="./assets/js/main.min.js"></script>
 </body>
 
